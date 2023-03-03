@@ -11,6 +11,7 @@ import { DistrictPageComponent } from './pages/district-page/district-page.compo
 import { CardComponent } from './card/card.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     SignupPageComponent,
     SignupFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
