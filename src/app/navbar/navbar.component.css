@@ -1,0 +1,12 @@
+.navbar {
+  z-index: 1;
+  position: absolute !important;
+  top: 10px !important;
+  width: 100%;
+}
+
+.sp-nav {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
