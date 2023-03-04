@@ -18,7 +18,7 @@
           </div>
           <div class="form-floating mb-2">
             <input
-            [(ngModel)]="userEmail"
+              [(ngModel)]="userEmail"
               type="email"
               class="form-control"
               name="email"
@@ -29,7 +29,7 @@
           </div>
           <div class="form-floating mb-2">
             <input
-            [(ngModel)]="userPassword"
+              [(ngModel)]="userPassword"
               type="password"
               class="form-control"
               name="password"
@@ -43,13 +43,17 @@
               type="password"
               class="form-control"
               name="password"
-              id="password"
+              id="cpassword"
               placeholder="Confirm Password"
             />
             <label for="password">Confirm Password</label>
           </div>
           <div class="d-grid gap-2">
-            <input type="submit" class="btn btn-warning" (click)="submitOnClick()" />
+            <input
+              type="submit"
+              class="btn btn-warning"
+              (click)="submitOnClick()"
+            />
             <button class="btn btn-outline-primary">Login</button>
           </div>
         </form>

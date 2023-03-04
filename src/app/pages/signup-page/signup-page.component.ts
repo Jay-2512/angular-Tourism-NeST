@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeroService } from 'src/app/hero.service';
 
 @Component({
   selector: 'app-signup-page',
@@ -6,13 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup-page.component.css'],
 })
 export class SignupPageComponent {
+  constructor(private heroService: HeroService) {}
+
   userName: any;
   userEmail: any;
   userPassword: any;
+  userData: any;
 
   submitOnClick = () => {
-    console.log(this.userName);
-    console.log(this.userEmail);
-    console.log(this.userPassword);
+    const userData = {
+      userName: this.userName,
+      userEmail: this.userEmail,
+      userPassword: this.userPassword,
+    };
+
+    this.heroService.addData(userData);
+    this.heroService.readData();
+    this.heroService.deleteData();
   };
 }

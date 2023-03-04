@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { FormsModule } from '@angular/forms';
+import { SinglePageComponent } from './pages/single-page/single-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     SignupPageComponent,
     SignupFormComponent,
+    SinglePageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

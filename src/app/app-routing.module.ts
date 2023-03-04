@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { DistrictPageComponent } from './pages/district-page/district-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { SinglePageComponent } from './pages/single-page/single-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'districts', component: DistrictPageComponent },
+  { path: 'single', component: SinglePageComponent },
   { path: 'signup', component: SignupPageComponent },
 ];
 
