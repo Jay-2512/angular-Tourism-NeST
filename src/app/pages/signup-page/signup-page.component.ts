@@ -12,7 +12,6 @@ export class SignupPageComponent {
   userName: any;
   userEmail: any;
   userPassword: any;
-  userData: any;
 
   submitOnClick = () => {
     const userData = {

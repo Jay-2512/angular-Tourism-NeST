@@ -10,9 +10,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { DistrictPageComponent } from './pages/district-page/district-page.component';
 import { CardComponent } from './card/card.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
-import { SignupFormComponent } from './signup-form/signup-form.component';
 import { FormsModule } from '@angular/forms';
 import { SinglePageComponent } from './pages/single-page/single-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +24,8 @@ import { SinglePageComponent } from './pages/single-page/single-page.component';
     DistrictPageComponent,
     CardComponent,
     SignupPageComponent,
-    SignupFormComponent,
     SinglePageComponent,
+    LoginPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
